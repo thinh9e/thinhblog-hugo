@@ -1,0 +1,5 @@
+{{ $jquery := resources.Get `js/vendors/jquery-3.5.1.slim.min.js` }}
+{{ $popper := resources.Get `js/vendors/popper-1.16.1.min.js` }}
+{{ $bootstrap := resources.Get `js/vendors/bootstrap-4.5.3.min.js` }}
+{{ $js := slice $jquery $popper $bootstrap | resources.Concat `js/bundle.js` | fingerprint }}
+<script src="{{ $js.Permalink }}"></script>

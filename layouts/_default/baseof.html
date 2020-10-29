@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ block `title` . }}{{ end }}</title>
+  <base href="{{ .Site.BaseURL }}">
+  <meta name="author" content="{{ .Site.Params.author }}">
+  {{ partial `style.html` . }}
+  {{ block `style` . }}{{ end }}
+</head>
+<body>
+  {{ partial `header.html` . }}
+  {{ block `main` . }}{{ end }}
+  {{ partial `footer.html` . }}
+  {{ partial `script.html` . }}
+  {{ block `script` . }}{{ end }}
+</body>
+</html>

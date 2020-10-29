@@ -1,0 +1,3 @@
+{{ $options := (dict `targetPath` `css/style.css` `outputStyle` `compressed`) }}
+{{ $style := resources.Get `scss/main.scss` | toCSS $options | fingerprint }}
+<link rel="stylesheet" href="{{ $style.Permalink }}">

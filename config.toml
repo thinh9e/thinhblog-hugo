@@ -1,3 +1,6 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseURL = "https://thinhblog.com/"
+languageCode = "vi"
+title = "Thịnh Blog &bull; Lập trình, Chụp ảnh và Khám phá"
+
+[params]
+    author = "Thịnh Nguyễn"
