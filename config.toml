@@ -2,5 +2,10 @@ baseURL = "https://thinhblog.com/"
 languageCode = "vi"
 title = "Thịnh Blog &bull; Lập trình, Chụp ảnh và Khám phá"
 
+[taxonomies]
+    category = "categories"
+    tag = "tags"
+
 [params]
     author = "Thịnh Nguyễn"
+    github = "https://github.com/npthinhdev"
