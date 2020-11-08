@@ -1,0 +1,13 @@
+.ad {
+  border: 1px solid $gray-600;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  &__728x90 {
+    height: 90px;
+    width: 728px;
+  }
+  &__468x60 {
+    height: 60px;
+    width: 468px;
+  }
+}

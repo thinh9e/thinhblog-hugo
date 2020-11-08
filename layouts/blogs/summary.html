@@ -1,0 +1,15 @@
+<article class="col mb-4">
+  <section class="card shadow-sm">
+    <div class="card-header">
+      <a href="categories/{{ .Page.Params.category | urlize }}" class="badge badge-dark" target="_blank">{{ .Page.Params.category }}</a>
+    </div>
+    <a href="{{ .Permalink }}" title="Cập nhật: {{ .Date.Format `02.01.2006` }}">
+      <img src="{{ .Page.Params.thumbnail }}" class="card-img-top" alt="{{ .Title }}" loading="lazy">
+    </a>
+    <div class="card-body">
+      <h2 class="card-title">
+        <a href="{{ .Permalink }}" class="card-link text-dark">{{ .Title }}</a>
+      </h2>
+    </div>
+  </section>
+</article>

@@ -1,6 +1,7 @@
 baseURL = "https://thinhblog.com/"
 languageCode = "vi"
 title = "Thịnh Blog"
+paginate = 6
 
 [taxonomies]
     category = "categories"
