@@ -1,0 +1,18 @@
+<nav class="container mb-4" aria-label="page navigation">
+  <div class="row row-cols-2">
+    <div class="col text-right">
+      {{ if .Paginator.HasPrev }}
+        <a href="{{ .Paginator.Prev.URL }}" class="pagination--btn btn btn-secondary w-75">Trước</a>
+      {{ else }}
+        <a class="pagination--btn btn btn-outline-secondary w-75 disabled">Trước</a>
+      {{ end }}
+    </div>
+    <div class="col text-left">
+      {{ if .Paginator.HasNext }}
+        <a href="{{ .Paginator.Next.URL }}" class="pagination--btn btn btn-dark w-75">Tiếp</a>
+      {{ else }}
+        <a class="pagination--btn btn btn-outline-dark w-75 disabled">Tiếp</a>
+      {{ end }}
+    </div>
+  </div>
+</nav>
