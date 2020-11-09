@@ -3,13 +3,23 @@
     <div class="card-header">
       <a href="categories/{{ .Page.Params.category | urlize }}" class="badge badge-dark" target="_blank">{{ .Page.Params.category }}</a>
     </div>
-    <a href="{{ .Permalink }}" title="Cập nhật: {{ .Date.Format `02.01.2006` }}">
+    <a href="{{ .Permalink }}">
       <img src="{{ .Page.Params.thumbnail }}" class="card-img-top" alt="{{ .Title }}" loading="lazy">
     </a>
     <div class="card-body">
       <h2 class="card-title">
         <a href="{{ .Permalink }}" class="card-link text-dark">{{ .Title }}</a>
       </h2>
+      <div class="container">
+        <div class="row">
+          <div class="col px-0"><hr></div>
+          <div class="col-auto pr-0">
+            <p class="card-text text-right">
+              <small class="text-muted">Cập nhật: {{ .Date.Format `02.01.2006` }}</small>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 </article>
