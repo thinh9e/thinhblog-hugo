@@ -1,3 +1,24 @@
-<aside>
-  test
+<aside class="sidebar">
+  <section class="sidebar__widget">
+    <h5 class="sidebar__widget__title">về tôi...</h5>
+    <hr class="hline-gradient">
+    <div class="sidebar__widget__body">{{ .Site.Params.shortIntro }}</div>
+  </section>
+  <section class="text-center">
+    <div class="ad ad__300x250"></div>
+  </section>
+  <section class="sidebar__widget">
+    <h5 class="sidebar__widget__title">Mới cập nhật</h5>
+    <hr class="hline-gradient">
+    <ul class="sidebar__widget__body list-group list-group-flush">
+      {{ with .Site.GetPage `section` `blogs` }}
+        {{ range first 3 .Pages.ByDate.Reverse }}
+          {{ .Render `li` }}
+        {{ end }}
+      {{ end }}
+    </ul>
+  </section>
+  <section class="sticky-top text-center">
+    <div class="ad ad__300x600"></div>
+  </section>
 </aside>

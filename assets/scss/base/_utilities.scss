@@ -10,4 +10,19 @@
     height: 60px;
     width: 468px;
   }
+  &__300x250 {
+    height: 250px;
+    width: 300px;
+  }
+  &__300x600 {
+    height: 600px;
+    width: 300px;
+  }
+}
+
+.hline-gradient {
+  background-image: linear-gradient(to right, rgba($info, .5), $white);
+  border: 0;
+  border-radius: 50rem;
+  height: 1px;
 }

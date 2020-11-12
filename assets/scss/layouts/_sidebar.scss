@@ -1,0 +1,32 @@
+.sidebar {
+  &__widget {
+    background-color: $white;
+    border-radius: 10% 25%;
+    box-shadow: $box-shadow-sm;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    &__title {
+      color: $info;
+    }
+    &__body {
+      font-size: .95rem;
+      overflow: hidden;
+      & li.list-group-item {
+        display: list-item;
+        list-style-position: inside;
+        overflow: hidden;
+        padding-right: 0;
+        padding-left: 0;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        & > a {
+          color: $dark;
+          &:hover {
+            color: $info;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}

@@ -9,6 +9,7 @@ paginate = 6
 
 [params]
     author = "Thịnh Nguyễn"
+    shortIntro = "Hi, tôi đam mê code và lập trình"
     github = "https://github.com/npthinhdev"
     email = "npthinh1996@gmail.com"
     facebook = "https://www.facebook.com/npthinhdev"

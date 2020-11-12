@@ -26,5 +26,11 @@
   }
   &-title {
     font-size: 1.15rem;
+    & > a {
+      color: $dark;
+      &:hover {
+        color: $info;
+      }
+    }
   }
 }
