@@ -20,8 +20,15 @@
   }
 }
 
-.hline-gradient {
-  background-image: linear-gradient(to right, rgba($info, .5), $white);
+.hline-linear {
+  background-image: linear-gradient(to right, rgba($info, .5), transparent);
+  border: 0;
+  border-radius: 50rem;
+  height: 1px;
+}
+
+.hline-radial {
+  background-image: radial-gradient(rgba($info, .5), transparent);
   border: 0;
   border-radius: 50rem;
   height: 1px;

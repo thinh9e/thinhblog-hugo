@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ block `title` . }}{{ end }}</title>
+  <meta name="description" content="{{ block `description` . }}{{ end }}">
   <base href="{{ .Site.BaseURL }}">
   <meta name="author" content="{{ .Site.Params.author }}">
   {{ partial `style.html` . }}
