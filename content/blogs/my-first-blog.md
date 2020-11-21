@@ -9,3 +9,14 @@ tags: [""]
 draft: false
 ---
 
+test
+
+```python
+def test():
+    return 0
+
+x = 5
+y = 100
+```
+
+test

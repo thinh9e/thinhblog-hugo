@@ -2,10 +2,10 @@ baseURL = "https://thinhblog.com/"
 languageCode = "vi"
 title = "Thịnh Blog"
 paginate = 6
+removePathAccents = true
 
 [taxonomies]
     category = "categories"
-    tag = "tags"
 
 [params]
     author = "Thịnh Nguyễn"
@@ -14,3 +14,7 @@ paginate = 6
     email = "npthinh1996@gmail.com"
     facebook = "https://www.facebook.com/npthinhdev"
     linkedin = "https://www.linkedin.com/in/npthinhdev"
+
+[markup]
+  [markup.highlight]
+    lineNos = true

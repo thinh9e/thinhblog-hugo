@@ -1,0 +1,52 @@
+{{ define `title` }}{{ .Title }} | {{ .Site.Title }}{{ end }}
+{{ define `description` }}{{ .Page.Params.description }}{{ end }}
+{{ define `main` }}
+<main role="main" class="container">
+  <div class="row">
+    <section class="col-lg-8 mb-4">
+      <section class="d-none d-xl-block text-center">
+        <div class="ad ad__728x90"></div>
+      </section>
+      <section class="d-none d-sm-block d-xl-none text-center">
+        <div class="ad ad__468x60"></div>
+      </section>
+      <article class="single">
+        <header class="single__header mb-3">
+          <h1 class="single__header__title">{{ .Title }}</h1>
+          <hr class="hline-linear mb-2">
+          <ul class="single__header__nav nav">
+            <li class="nav-item">{{ .Date.Format `02.01.2006` }}</li>
+            <li class="nav-item"><span class="text-info">{{ .Page.Params.author }}</span></li>
+            <li class="nav-item"><a href="categories/{{ .Page.Params.category | urlize }}" class="badge badge-warning" target="_blank">{{ .Page.Params.category }}</a></li>
+            <li class="nav-item">
+              {{ range $val := .Page.Params.tags }}
+                {{ if $val }}
+                  <i class="single__header__tags">#{{ $val }}</i>
+                {{ end }}
+              {{ end }}
+            </li>
+          </ul>
+          <hr class="hline-linear mt-2">
+          <section class="text-center">
+            <img src="{{ .Page.Params.thumbnail }}" class="img-fluid rounded" alt="{{ .Title }}">
+          </section>
+        </header>
+        <main class="bg-white p-3 mb-4 rounded shadow-sm">
+          {{ .Content }}
+        </main>
+        <footer>
+          <section class="d-none d-xl-block text-center">
+            <div class="ad ad__728x90"></div>
+          </section>
+          <section class="d-none d-sm-block d-xl-none text-center">
+            <div class="ad ad__468x60"></div>
+          </section>
+        </footer>
+      </article>
+    </section>
+    <section class="col-lg-4">
+      {{ partial `sidebar.html` . }}
+    </section>
+  </div>
+</main>
+{{ end }}
