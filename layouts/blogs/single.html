@@ -17,7 +17,7 @@
           <ul class="single__header__nav nav">
             <li class="nav-item">{{ .Date.Format `02.01.2006` }}</li>
             <li class="nav-item"><span class="text-info">{{ .Page.Params.author }}</span></li>
-            <li class="nav-item"><a href="categories/{{ .Page.Params.category | urlize }}" class="badge badge-warning" target="_blank">{{ .Page.Params.category }}</a></li>
+            <li class="nav-item"><a href="categories/{{ .Page.Params.categories | urlize }}" class="badge badge-warning" target="_blank">{{ .Page.Params.categories }}</a></li>
             <li class="nav-item">
               {{ range $val := .Page.Params.tags }}
                 {{ if $val }}

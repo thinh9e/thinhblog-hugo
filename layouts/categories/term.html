@@ -1,0 +1,34 @@
+{{ define `title` }}{{ .Title }} | {{ .Site.Title }}{{ end }}
+{{ define `description` }}Danh mục {{ .Title }}{{ end }}
+{{ define `main` }}
+<main role="main" class="container mb-4">
+  <div class="row">
+    <section class="col-lg-8 mb-4">
+      <section class="d-none d-xl-block text-center">
+        <div class="ad ad__728x90"></div>
+      </section>
+      <section class="d-none d-sm-block d-xl-none text-center">
+        <div class="ad ad__468x60"></div>
+      </section>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2">
+          {{ $paginator := .Paginate .Pages }}
+          {{ range $paginator.Pages }}
+            {{ .Render `summary` }}
+          {{ end }}
+        </div>
+      </div>
+      <section class="d-none d-xl-block text-center">
+        <div class="ad ad__728x90"></div>
+      </section>
+      <section class="d-none d-sm-block d-xl-none text-center">
+        <div class="ad ad__468x60"></div>
+      </section>
+      {{ partial `pagination.html` . }}
+    </section>
+    <section class="col-lg-4">
+      {{ partial `sidebar.html` . }}
+    </section>
+  </div>
+</main>
+{{ end }}

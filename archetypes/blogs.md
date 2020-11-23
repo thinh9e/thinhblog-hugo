@@ -4,7 +4,7 @@ author: "Thịnh Nguyễn"
 description: ""
 date: {{ .Date }}
 thumbnail: "img/blogs/350x200.png"
-category: "Khác"
+categories: "Khác"
 tags: [""]
 draft: true
 ---
