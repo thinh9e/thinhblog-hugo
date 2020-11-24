@@ -1,7 +1,7 @@
 <article class="col mb-4">
   <section class="card shadow-sm">
     <div class="card-header">
-      <a href="categories/{{ .Page.Params.categories | urlize }}" class="badge badge-warning" target="_blank">{{ .Page.Params.categories }}</a>
+      <a href="categories/{{ .Page.Params.categories | urlize }}/" class="badge badge-warning" target="_blank">{{ .Page.Params.categories }}</a>
     </div>
     <a href="{{ .Permalink }}">
       <img src="{{ .Page.Params.thumbnail }}" class="card-img-top" alt="{{ .Title }}" loading="lazy">

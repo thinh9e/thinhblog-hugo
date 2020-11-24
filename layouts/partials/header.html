@@ -19,10 +19,11 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" id="navbar-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Danh mục</a>
             <div class="dropdown-menu" aria-labelledby="navbar-dropdown">
-              <a href="#" class="dropdown-item">Lập trình</a>
-              <a href="#" class="dropdown-item">Đời sống</a>
+              {{ range where (.Site.GetPage `categories`).Pages.ByTitle `.Title` `!=` `Khác` }}
+                <a href="{{ .Permalink }}" class="dropdown-item">{{ .Title }}</a>
+              {{ end }}
               <div class="dropdown-divider"></div>
-              <a href="#" class="dropdown-item">Khác</a>
+              <a href="/categories/khac/" class="dropdown-item">Khác</a>
             </div>
           </li>
         </ul>
