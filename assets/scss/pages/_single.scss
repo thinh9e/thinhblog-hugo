@@ -21,6 +21,34 @@
       }
     }
   }
+  & blockquote {
+    border-left: .25rem solid $gray-600;
+    margin-left: 1rem;
+    padding: .5rem;
+  }
+  & > main > pre {
+    background-color: $light;
+    border-radius: .5rem;
+    padding: .5rem;
+  }
+  & table {
+    margin-bottom: 1rem;
+    width: 100%;
+    &, th, td {
+      border: 1px solid $gray-600;
+      padding: .5rem;
+    }
+    & th {
+      background-color: $info;
+      color: $light;
+      text-align: center;
+    }
+    & tr {
+      &:hover {
+        background-color: $light;
+      }
+    }
+  }
   & .highlight {
     margin-bottom: 1rem;
     & > div {
