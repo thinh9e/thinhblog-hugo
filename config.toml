@@ -3,17 +3,18 @@ languageCode = "vi"
 title = "Thịnh Blog"
 paginate = 6
 removePathAccents = true
+enableRobotsTXT = true
 
 [taxonomies]
-    category = "categories"
+  category = "categories"
 
 [params]
-    author = "Thịnh Nguyễn"
-    shortIntro = "Hi, tôi đam mê code và lập trình"
-    github = "https://github.com/npthinhdev"
-    email = "npthinh1996@gmail.com"
-    facebook = "https://www.facebook.com/npthinhdev"
-    linkedin = "https://www.linkedin.com/in/npthinhdev"
+  author = "Thịnh Nguyễn"
+  shortIntro = "Hi, tôi đam mê code và lập trình"
+  github = "https://github.com/npthinhdev"
+  email = "npthinh1996@gmail.com"
+  facebook = "https://www.facebook.com/npthinhdev"
+  linkedin = "https://www.linkedin.com/in/npthinhdev"
 
 [markup]
   [markup.highlight]
