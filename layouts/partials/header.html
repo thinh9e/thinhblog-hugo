@@ -10,22 +10,25 @@
       </button>
       <div class="collapse navbar-collapse" id="navbar-collapse">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a href="{{ .Site.BaseURL }}" class="nav-link">Trang chủ</a>
-          </li>
-          <li class="nav-item">
-            <a href="/gioi-thieu" class="nav-link">Giới thiệu</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" id="navbar-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Danh mục</a>
-            <div class="dropdown-menu" aria-labelledby="navbar-dropdown">
-              {{ range where (.Site.GetPage `categories`).Pages.ByTitle `.Title` `!=` `Khác` }}
-                <a href="{{ .Permalink }}" class="dropdown-item">{{ .Title }}</a>
-              {{ end }}
-              <div class="dropdown-divider"></div>
-              <a href="/categories/khac/" class="dropdown-item">Khác</a>
-            </div>
-          </li>
+          {{ $currentPage := . }}
+          {{ range .Site.Menus.main }}
+            {{ if eq .Identifier `cat` }}
+              <li class="nav-item dropdown{{ if in $currentPage.URL `categories` }} active{{ end }}">
+                <a class="nav-link dropdown-toggle" id="navbar-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ .Name }}</a>
+                <div class="dropdown-menu" aria-labelledby="navbar-dropdown">
+                  {{ range where ($.Site.GetPage `categories`).Pages.ByTitle `.Title` `!=` `Khác` }}
+                    <a href="{{ .Permalink }}" class="dropdown-item">{{ .Title }}</a>
+                  {{ end }}
+                  <div class="dropdown-divider"></div>
+                  <a href="/categories/khac/" class="dropdown-item">Khác</a>
+                </div>
+              </li>
+            {{ else }}
+              <li class="nav-item{{ if eq $currentPage.URL .URL }} active{{ end }}">
+                <a href="{{ .URL }}" class="nav-link">{{ .Name }}</a>
+              </li>
+            {{ end }}
+          {{ end }}
         </ul>
         <div class="my-2 my-lg-0 text-right">
           <div class="btn-group mr-2" role="group">
