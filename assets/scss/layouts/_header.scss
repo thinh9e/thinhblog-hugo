@@ -11,4 +11,32 @@
       padding: .15rem;
     }
   }
+  &-toggler {
+    border: none;
+    height: 2rem;
+    width: 2.5rem;
+    position: relative;
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      border: 1px solid $gray-600;
+      color: $light;
+    }
+    & > i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  & .dropdown-item {
+    &:hover {
+      color: $info;
+    }
+    &:active {
+      background-color: $gray-200;
+      color: $info;
+    }
+  }
 }

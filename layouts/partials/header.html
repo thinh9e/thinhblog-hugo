@@ -6,14 +6,14 @@
         <strong class="navbar-brand--text">{{ .Site.Title }}</strong>
       </a>
       <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbar-collapse">
         <ul class="navbar-nav mr-auto">
           {{ $currentPage := . }}
           {{ range .Site.Menus.main }}
             {{ if eq .Identifier `cat` }}
-              <li class="nav-item dropdown{{ if in $currentPage.URL `categories` }} active{{ end }}">
+              <li class="nav-item dropdown{{ if in $currentPage.RelPermalink `categories` }} active{{ end }}">
                 <a class="nav-link dropdown-toggle" id="navbar-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ .Name }}</a>
                 <div class="dropdown-menu" aria-labelledby="navbar-dropdown">
                   {{ range where ($.Site.GetPage `categories`).Pages.ByTitle `.Title` `!=` `Khác` }}
@@ -24,7 +24,7 @@
                 </div>
               </li>
             {{ else }}
-              <li class="nav-item{{ if eq $currentPage.URL .URL }} active{{ end }}">
+              <li class="nav-item{{ if eq $currentPage.RelPermalink .URL }} active{{ end }}">
                 <a href="{{ .URL }}" class="nav-link">{{ .Name }}</a>
               </li>
             {{ end }}
