@@ -32,6 +32,8 @@ enableRobotsTXT = true
   email = "npthinh1996@gmail.com"
   facebook = "https://www.facebook.com/npthinhdev"
   linkedin = "https://www.linkedin.com/in/npthinhdev"
+  momo = "https://nhantien.momo.vn/fnT132uBd4J"
+  paypal = "https://paypal.me/npthinh1996"
 
 [markup]
   [markup.highlight]

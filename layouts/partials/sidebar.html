@@ -3,6 +3,17 @@
     <h5 class="sidebar__widget__title">về tôi...</h5>
     <hr class="hline-linear">
     <div class="sidebar__widget__body">{{ .Site.Params.shortIntro }}</div>
+    <!-- <hr> -->
+    <section class="sidebar__donate" title="Donate">
+      <div>
+        <a href="{{ .Site.Params.momo }}" target="_blank" title="MoMo">
+          <img src="/img/momo.png" alt="donate momo">
+        </a>
+        <a href="{{ .Site.Params.paypal }}" target="_blank" title="PayPal">
+          <img src="/img/paypal.png" alt="donate paypal">
+        </a>
+      </div>
+    </section>
   </section>
   <section class="text-center">
     <div class="ad ad__300x250"></div>
