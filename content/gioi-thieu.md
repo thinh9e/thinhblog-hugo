@@ -5,7 +5,7 @@ date: 2020-11-24T23:32:52+07:00
 draft: false
 ---
 
-{{<image src="img/blogs/525x300.png" cap="Ảnh tiêu đề">}}
+{{<figure src="img/blogs/525x300.png" cap="Ảnh tiêu đề">}}
 
 ## Headings
 
