@@ -1,6 +1,8 @@
 {{ $jquery := resources.Get `js/vendors/jquery.slim.min.js` }}
 {{ $popper := resources.Get `js/vendors/popper.min.js` }}
 {{ $bootstrap := resources.Get `js/vendors/bootstrap.min.js` }}
-{{ $script := resources.Get `js/script.js` }}
-{{ $js := slice $jquery $popper $bootstrap $script | resources.Concat `js/bundle.js` | minify | fingerprint }}
-<script src="{{ $js.Permalink }}"></script>
+{{ $vendors := slice $jquery $popper $bootstrap | resources.Concat `js/vendors.js` | minify | fingerprint }}
+<script src="{{ $vendors.Permalink }}"></script>
+
+{{ $script := resources.Get `js/script.js` | minify | fingerprint }}
+<script src="{{ $script.Permalink }}"></script>

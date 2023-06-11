@@ -1,3 +1,11 @@
-{{ $options := (dict `targetPath` `css/style.css` `outputStyle` `compressed`) }}
+{{ $bootstrap := resources.Get `css/vendors/bootstrap.min.css` }}
+{{ $fontawesome := resources.Get `css/vendors/fontawesome.min.css` }}
+{{ $brands := resources.Get `css/vendors/brands.min.css` }}
+{{ $regular := resources.Get `css/vendors/regular.min.css` }}
+{{ $solid := resources.Get `css/vendors/solid.min.css` }}
+{{ $vendors := slice $bootstrap $fontawesome $brands $regular $solid | resources.Concat `vendors.css` | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $vendors.Permalink }}">
+
+{{ $options := (dict `targetPath` `css/style.min.css` `outputStyle` `compressed`) }}
 {{ $style := resources.Get `scss/main.scss` | toCSS $options | fingerprint }}
 <link rel="stylesheet" href="{{ $style.Permalink }}">
