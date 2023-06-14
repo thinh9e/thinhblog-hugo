@@ -6,37 +6,37 @@ removePathAccents = true
 enableRobotsTXT = true
 
 [menu]
-  [[menu.main]]
-    identifier = "home"
-    name = "Trang chủ"
-    url = "/"
-    weight = 1
-  [[menu.main]]
-    identifier = "about"
-    name = "Giới thiệu"
-    url = "/gioi-thieu/"
-    weight = 2
-  [[menu.main]]
-    identifier = "cat"
-    name = "Chủ đề"
-    url = ""
-    weight = 3
+[[menu.main]]
+identifier = "home"
+name = "Trang chủ"
+url = "/"
+weight = 1
+[[menu.main]]
+identifier = "about"
+name = "Giới thiệu"
+url = "/gioi-thieu/"
+weight = 2
+[[menu.main]]
+identifier = "cat"
+name = "Chủ đề"
+url = ""
+weight = 3
 
 [taxonomies]
-  category = "categories"
+category = "categories"
 
 [params]
-  description = """Trang blog cá nhân chia sẻ về kiến thức lập trình, kinh nghiệm làm việc ở công ty, \
-  những trải nghiệm du lịch khám phá và nhiều thức khác"""
-  author = "Thịnh Nguyễn"
-  shortIntro = "Hi, mình thích lập trình và chụp hình."
-  github = "https://github.com/thinh9e"
-  email = "npthinh1996@gmail.com"
-  facebook = "https://www.facebook.com/thinh9e"
-  linkedin = "https://www.linkedin.com/in/thinh9e/"
-  momo = "https://nhantien.momo.vn/fnT132uBd4J"
-  paypal = "https://paypal.me/npthinh1996"
+description = """Trang blog cá nhân chia sẻ về kiến thức lập trình, kinh nghiệm làm việc ở công ty, \
+những trải nghiệm du lịch khám phá và nhiều thức khác"""
+author = "Thịnh Nguyễn"
+shortIntro = "Hi, mình thích lập trình và chụp hình."
+github = "https://github.com/thinh9e"
+email = "npthinh1996@gmail.com"
+facebook = "https://www.facebook.com/thinh9e"
+linkedin = "https://www.linkedin.com/in/thinh9e/"
+momo = "https://nhantien.momo.vn/fnT132uBd4J"
+paypal = "https://paypal.me/npthinh1996"
 
 [markup]
-  [markup.highlight]
-    lineNos = true
+[markup.highlight]
+lineNos = true
