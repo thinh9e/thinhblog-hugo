@@ -18,7 +18,7 @@ enableRobotsTXT = true
     weight = 2
   [[menu.main]]
     identifier = "cat"
-    name = "Danh mục"
+    name = "Chủ đề"
     url = ""
     weight = 3
 
@@ -26,8 +26,10 @@ enableRobotsTXT = true
   category = "categories"
 
 [params]
+  description = """Trang blog cá nhân chia sẻ về kiến thức lập trình, kinh nghiệm làm việc ở công ty, \
+  những trải nghiệm du lịch khám phá và nhiều thức khác"""
   author = "Thịnh Nguyễn"
-  shortIntro = "Hi, tôi đam mê code và lập trình"
+  shortIntro = "Hi, mình thích lập trình và chụp hình."
   github = "https://github.com/thinh9e"
   email = "npthinh1996@gmail.com"
   facebook = "https://www.facebook.com/thinh9e"
