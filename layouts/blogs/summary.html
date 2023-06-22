@@ -1,14 +1,15 @@
-<article class="col mb-4">
+<article class="col">
   <section class="card shadow-sm">
-    <div class="card-header">
-      <a href="categories/{{ .Page.Params.categories | urlize }}/" class="badge badge-warning" target="_blank">{{ .Page.Params.categories }}</a>
+    <div class="card-header d-flex align-items-center">
+      <a class="badge text-bg-warning"
+         href="categories/{{ .Page.Params.categories | urlize }}/">{{ .Page.Params.categories }}</a>
     </div>
     <a href="{{ .Permalink }}">
       <img src="{{ .Page.Params.thumbnail }}" class="card-img-top" alt="{{ .Title }}" loading="lazy">
     </a>
     <div class="card-body">
-      <h2 class="card-title">
-        <a href="{{ .Permalink }}" class="card-link">{{ .Title }}</a>
+      <h2 class="card-title text-truncate">
+        <a class="card-link" href="{{ .Permalink }}">{{ .Title }}</a>
       </h2>
       <div class="container">
         <div class="row">
