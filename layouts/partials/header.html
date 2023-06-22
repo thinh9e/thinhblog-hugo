@@ -1,51 +1,51 @@
 <header class="mb-4">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
     <div class="container">
-      <a href="{{ .Site.BaseURL }}" class="navbar-brand">
-        <img src="/logo.png" class="navbar-brand--img" alt="logo img" loading="lazy">
-        <strong class="navbar-brand--text">{{ .Site.Title }}</strong>
+      <a class="navbar-brand" href="{{ .Site.BaseURL }}">
+        <img src="/logo-30x30.png" alt="logo" width="30" height="30" class="d-inline-block align-text-top">
+        <strong>{{ .Site.Title }}</strong>
       </a>
-      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="toggle navigation">
-        <i class="fas fa-bars"></i>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse"
+              aria-controls="navbar-collapse" aria-expanded="false" aria-label="toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbar-collapse">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           {{ $currentPage := . }}
           {{ range .Site.Menus.main }}
             {{ if eq .Identifier `cat` }}
-              <li class="nav-item dropdown{{ if in $currentPage.RelPermalink `categories` }} active{{ end }}">
-                <a class="nav-link dropdown-toggle" id="navbar-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ .Name }}</a>
-                <div class="dropdown-menu" aria-labelledby="navbar-dropdown">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle{{ if in $currentPage.RelPermalink `categories` }} active{{ end }}"
+                   href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  {{ .Name }}
+                </a>
+                <ul class="dropdown-menu">
                   {{ range where ($.Site.GetPage `categories`).Pages.ByTitle `.Title` `!=` `Khác` }}
-                    <a href="{{ .Permalink }}" class="dropdown-item">{{ .Title }}</a>
+                    <li><a class="dropdown-item" href="{{ .Permalink }}">{{ .Title }}</a></li>
                   {{ end }}
-                  <div class="dropdown-divider"></div>
-                  <a href="/categories/khac/" class="dropdown-item">Khác</a>
-                </div>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="/categories/khac/">Khác</a></li>
+                </ul>
               </li>
             {{ else }}
-              <li class="nav-item{{ if eq $currentPage.RelPermalink .URL }} active{{ end }}">
-                <a href="{{ .URL }}" class="nav-link">{{ .Name }}</a>
+              <li class="nav-item">
+                <a class="nav-link{{ if eq $currentPage.RelPermalink .URL }} active{{ end }}"
+                   {{ if eq $currentPage.RelPermalink .URL }} aria-current="page" {{ end }}
+                   href="{{ .URL }}">{{ .Name }}</a>
               </li>
             {{ end }}
           {{ end }}
         </ul>
-        <div class="my-2 my-lg-0 text-right">
-          <div class="btn-group mr-2" role="group">
-            <a href="{{ .Site.Params.github }}" class="btn btn-light" role="button" target="_blank">
-              <i class="fab fa-github-alt"></i>
-            </a>
-            <a href="mailto:{{ .Site.Params.email }}" class="btn btn-light" role="button">
-              <i class="far fa-envelope"></i>
-            </a>
-            <a href="{{ .Site.Params.facebook }}" class="btn btn-light" role="button" target="_blank">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="{{ .Site.Params.linkedin }}" class="btn btn-light" role="button" target="_blank">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
+        <div>
+          <div class="btn-group">
+            <a href="{{ .Site.Params.github }}" class="btn btn-light"><i class="fa-brands fa-github-alt"></i></a>
+            <a href="mailto:{{ .Site.Params.email }}" class="btn btn-light"><i class="fa-regular fa-envelope"></i></a>
+            <a href="{{ .Site.Params.facebook }}" class="btn btn-light"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="{{ .Site.Params.linkedin }}" class="btn btn-light"><i class="fa-brands fa-linkedin-in"></i></a>
           </div>
-          <a class="btn btn-info" role="button"><i class="fas fa-search"></i></a>
+          <button type="button" class="btn btn-info"><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
       </div>
     </div>
