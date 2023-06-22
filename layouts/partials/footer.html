@@ -1,11 +1,16 @@
 <footer class="footer">
-  <div class="container text-center">
+  <figure class="container">
     <hr class="hline-radial">
-    <section class="blockquote-footer">Xây dựng bằng <span class="text-danger">&hearts;</span> với GoHugo</section>
-    <section><small>&copy; {{ .Site.Title }} &bull; {{ now.Year }}</small></section>
-  </div>
+    <blockquote class="blockquote">
+      <section><small>&copy; {{ .Site.Title }} &bull; {{ now.Year }}</small></section>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+      Xây dựng bằng <span class="text-danger">&hearts;</span> với
+      <a href="https://gohugo.io/" target="_blank">GoHugo</a>
+    </figcaption>
+  </figure>
   <div id="back-top" title="Về đầu trang">
-    <i class="fas fa-angle-up"></i>
-    <i class="fas fa-arrow-up"></i>
+    <i class="fa-solid fa-angle-up"></i>
+    <i class="fa-solid fa-arrow-up"></i>
   </div>
 </footer>

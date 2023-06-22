@@ -1,4 +1,10 @@
 .footer {
-  color: $gray-600;
-  padding-bottom: 1rem;
+  & figure {
+    text-align: center;
+  }
+
+  & a {
+    color: $info;
+    text-decoration: none;
+  }
 }
