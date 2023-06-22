@@ -1,51 +1,45 @@
 .sidebar {
   height: 100%;
+
   &__widget {
     background-color: $white;
     border-radius: 10% 25%;
     box-shadow: $box-shadow-sm;
     margin-bottom: 1.5rem;
     padding: 1.5rem;
+
     &__title {
       color: $info;
     }
+
     &__body {
       font-size: .95rem;
       overflow: hidden;
-      & li.list-group-item {
-        display: list-item;
-        list-style-position: inside;
-        overflow: hidden;
-        padding-right: 0;
-        padding-left: 0;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        & > a {
-          color: $dark;
-          &:hover {
-            color: $info;
-            text-decoration: none;
-          }
+
+      & a.list-group-item {
+        &:hover {
+          color: $info;
         }
       }
     }
   }
+
   &__donate {
     margin-top: 1rem;
     text-align: center;
-    & img {
-      height: 48px;
-      width: 48px;
-    }
+
     & a {
       text-decoration: none;
     }
+
     & > div {
       display: inline-block;
+
       &:hover {
         & img {
           transition: all .2s;
         }
+
         & img:not(:hover) {
           opacity: .2;
         }
