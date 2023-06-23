@@ -5,58 +5,70 @@
       font-weight: 700;
       color: $info;
     }
+
     &__nav {
       font-size: 80%;
-      margin-left: .5rem;
-      & > li {
-        &:not(:last-child) {
-          margin-right: 2rem;
-        }
-      }
-    }
-    &__tags {
-      color: $gray-600;
-      &:not(:last-child)::after {
-        content: ",";
+
+      & a {
+        text-decoration: none;
       }
     }
   }
+
+  &__tags {
+    color: $gray-600;
+
+    &:not(:last-child)::after {
+      content: ",";
+    }
+  }
+
+  // Markdown format
   & blockquote {
     border-left: .25rem solid $gray-600;
     margin-left: 1rem;
     padding: .5rem;
   }
+
   & > main > pre {
     background-color: $light;
     border-radius: .5rem;
     padding: .5rem;
   }
+
   & table {
     margin-bottom: 1rem;
     width: 100%;
+
     &, th, td {
       border: 1px solid $gray-600;
       padding: .5rem;
     }
+
     & th {
       background-color: $info;
       color: $light;
       text-align: center;
     }
+
     & tr {
       &:hover {
         background-color: $light;
       }
     }
   }
+
   & .highlight {
     margin-bottom: 1rem;
+
     & > div {
       border-radius: .5rem;
+
       & > table {
         border-radius: inherit;
       }
     }
+
     & pre {
       margin: 0;
       padding: .5rem;
