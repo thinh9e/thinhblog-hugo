@@ -5,7 +5,8 @@ description: ""
 date: 2020-11-08T13:24:36+07:00
 thumbnail: "img/blogs/525x300.png"
 categories: "Khác"
-tags: [""]
+tags: [ "test tag", "test tag", "test tag", "test tag", "test tag", "test tag", "test tag", "test tag", "test tag",
+        "test tag", "test tag", "test tag" ]
 draft: false
 ---
 
