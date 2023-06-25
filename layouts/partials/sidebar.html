@@ -1,7 +1,7 @@
 <aside class="sidebar">
   <section class="sidebar__widget">
     <h5 class="sidebar__widget__title">Về mình</h5>
-    <hr class="hline-linear">
+    <hr class="hr-linear">
     <div class="sidebar__widget__body">{{ .Site.Params.shortIntro }}</div>
     <section class="sidebar__donate" title="Donate">
       <div>
@@ -19,7 +19,7 @@
   </section>
   <section class="sidebar__widget">
     <h5 class="sidebar__widget__title">Mới cập nhật</h5>
-    <hr class="hline-linear">
+    <hr class="hr-linear">
     <div class="sidebar__widget__body list-group list-group-flush">
       {{ with .Site.GetPage `Type` `blogs` }}
         {{ range first 3 .Pages.ByDate.Reverse }}

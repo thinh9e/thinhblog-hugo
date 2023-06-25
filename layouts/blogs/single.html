@@ -13,7 +13,7 @@
       <article class="single">
         <header class="single__header mb-3">
           <h1 class="single__header__title">{{ .Title }}</h1>
-          <hr class="hline-linear mb-2">
+          <hr class="hr-linear mb-2">
           <ul class="single__header__nav nav grid gap-0 column-gap-5">
             <li class="nav-item">{{ .Date.Format `02.01.2006` }}</li>
             <li class="nav-item"><span class="text-info">{{ .Page.Params.author }}</span></li>
@@ -22,7 +22,7 @@
                  href="categories/{{ .Page.Params.categories | urlize }}/">{{ .Page.Params.categories }}</a>
             </li>
           </ul>
-          <hr class="hline-linear mt-2">
+          <hr class="hr-linear mt-2">
           <section class="text-center">
             <img src="{{ .Page.Params.thumbnail }}" class="img-fluid rounded" alt="{{ .Title }}">
           </section>
