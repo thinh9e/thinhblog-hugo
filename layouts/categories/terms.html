@@ -1,1 +1,26 @@
-<meta http-equiv="refresh" content="0; url={{ .Site.BaseURL }}">
+{{ define `title` }}Chủ đề | {{ .Site.Title }}{{ end }}
+{{ define `description` }}Danh sách chủ đề{{ end }}
+{{ define `main` }}
+<main role="main" class="container mb-4">
+  <div class="row">
+    <section class="col-lg-8 mb-4">
+      <section>{{ partial "ads/728x90.html" . }}</section>
+      <section>{{ partial "ads/468x60.html" . }}</section>
+      <div class="container mb-4">
+        <div class="list-group">
+          {{ range where ($.Site.GetPage `categories`).Pages.ByTitle `.Title` `!=` `Khác` }}
+            <a class="list-group-item list-group-item-action" href="{{ .Permalink }}">{{ .Title }}</a>
+          {{ end}}
+          <a class="list-group-item list-group-item-action" href="/categories/khac/">Khác</a>
+        </div>
+      </div>
+      <section>{{ partial "ads/728x90.html" . }}</section>
+      <section>{{ partial "ads/468x60.html" . }}</section>
+      {{ partial `pagination.html` . }}
+    </section>
+    <section class="col-lg-4">
+      {{ partial `sidebar.html` . }}
+    </section>
+  </div>
+</main>
+{{ end }}
