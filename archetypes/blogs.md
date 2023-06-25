@@ -5,7 +5,7 @@ description: ""
 date: {{ .Date }}
 thumbnail: "img/blogs/525x300.png"
 categories: "Khác"
-tags: [""]
+tags: []
 draft: false
 ---
 
