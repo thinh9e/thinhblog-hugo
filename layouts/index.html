@@ -4,12 +4,8 @@
 <main role="main" class="container mb-4">
   <div class="row">
     <section class="col-lg-8 mb-4">
-      <section class="d-none d-xl-block text-center">
-        <div class="ad ad__728x90"></div>
-      </section>
-      <section class="d-none d-sm-block d-xl-none text-center">
-        <div class="ad ad__468x60"></div>
-      </section>
+      <section>{{ partial "ads/728x90.html" . }}</section>
+      <section>{{ partial "ads/468x60.html" . }}</section>
       <div class="container mb-4">
         <div class="row g-3 row-cols-1 row-cols-sm-2">
           {{ $paginator := .Paginate (where .Site.RegularPages `Type` `blogs`) }}
@@ -18,12 +14,8 @@
           {{ end }}
         </div>
       </div>
-      <section class="d-none d-xl-block text-center">
-        <div class="ad ad__728x90"></div>
-      </section>
-      <section class="d-none d-sm-block d-xl-none text-center">
-        <div class="ad ad__468x60"></div>
-      </section>
+      <section>{{ partial "ads/728x90.html" . }}</section>
+      <section>{{ partial "ads/468x60.html" . }}</section>
       {{ partial `pagination.html` . }}
     </section>
     <section class="col-lg-4">

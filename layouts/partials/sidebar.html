@@ -14,9 +14,7 @@
       </div>
     </section>
   </section>
-  <section class="text-center">
-    <div class="ad ad__300x250"></div>
-  </section>
+  <section>{{ partial "ads/300x250.html" . }}</section>
   <section class="sidebar__widget">
     <h5 class="sidebar__widget__title">Mới cập nhật</h5>
     <hr class="hr-linear">
@@ -28,7 +26,5 @@
       {{ end }}
     </div>
   </section>
-  <section class="sticky-top text-center">
-    <div class="ad ad__300x600"></div>
-  </section>
+  <section class="sticky-top">{{ partial "ads/300x600.html" . }}</section>
 </aside>
