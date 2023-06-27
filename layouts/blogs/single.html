@@ -23,7 +23,7 @@
             <img src="{{ .Page.Params.thumbnail }}" class="img-fluid rounded" alt="{{ .Title }}">
           </section>
         </header>
-        <main class="bg-white p-3 mb-4 rounded shadow-sm">
+        <main class="bg-white p-3 mb-0 mb-sm-4 rounded shadow-sm">
           {{ .Content }}
           {{ $tags := .Page.Params.tags }}
           {{ if (gt ($tags | len ) 0) }}
