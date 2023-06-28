@@ -1,133 +1,43 @@
 ---
-title: "Giới Thiệu"
-description: ""
-date: 2020-11-24T23:32:52+07:00
+title: "Giới thiệu"
+description: "Trang giới thiệu về blog của mình,
+  nơi mình chia sẻ những những chủ đề liên quan đến lập trình và khám phá"
+date: 2023-06-28T06:30:00+07:00
 draft: false
 ---
 
-{{<figure src="img/blogs/525x300.png" cap="Ảnh tiêu đề">}}
+Hi mọi người, mình là **Thịnh**,
+hiện tại mình đang là một lập trình viên.
+Mình đã lập gia đình, và vợ mình làm về kế toán.
 
-## Headings
+{{<figure src="img/avatar.jpg" cap="Avatar">}}
 
-The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
+Mình thích khám phá và học hỏi những công nghệ mới.
+Mình đã học lập trình từ những năm học phổ thông,
+bắt đầu từ **Pascal**, lúc lên đại học thì **C/C++**, **PHP** rồi **Python**, **Java** lúc mình đi làm,
+cũng như đã làm quen với nhiều framework và nền tảng khác nhau.
+Mình luôn muốn cập nhật kiến thức của mình và chia sẻ những gì mình biết với cộng đồng.
 
-# H1
-## H2
-### H3
-#### H4
-##### H5
-###### H6
+Đó là lý do tại sao mình đã tạo ra trang blog này,
+nơi mình sẽ viết về những chủ đề liên quan đến lập trình và khám phá.
+Mình hy vọng rằng những bài viết của mình sẽ mang lại cho bạn những thông tin hữu ích,
+những gợi ý thú vị và những cảm hứng để bạn theo đuổi đam mê của mình.
 
-## Paragraph
+Trang blog của mình sẽ xoay quanh về:
 
-Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
+- Lập trình, mình sẽ giới thiệu về những công nghệ mới, những mẹo và thủ thuật,
+  những dự án cá nhân và những bài hướng dẫn chi tiết.
+- Khám phá, mình sẽ kể về những cuốn sách, những bộ phim
+  và những chuyến đi mà vợ chồng mình đã được trải nghiệm.
 
-Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
+Mình rất mong được nhận được phản hồi và góp ý từ bạn.
+Bạn có thể liên hệ với mình qua email hoặc mạng xã hội.
+Mình rất vui khi được kết nối và trao đổi với bạn.
 
-## Blockquotes
+Ngoài ra, nếu bạn thấy trang blog của mình có ích và muốn ủng hộ cho mình,
+bạn có thể donate cho mình qua **Momo** hoặc **Paypal**.
+Mọi khoản ủng hộ đều được mình trân trọng và sử dụng để duy trì và phát triển trang blog.
 
-The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a `footer` or `cite` element, and optionally with in-line changes such as annotations and abbreviations.
-
-#### Blockquote without attribution
-
-> Tiam, ad mint andaepu dandae nostion secatur sequo quae.
-> **Note** that you can use *Markdown syntax* within a blockquote.
-
-#### Blockquote with attribution
-
-> Don't communicate by sharing memory, share memory by communicating.</p>
-> — <cite>Rob Pike[^1]</cite>
-
-
-[^1]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.
-
-## Tables
-
-Tables aren't part of the core Markdown spec, but Hugo supports supports them out-of-the-box.
-
-   Name | Age
---------|------
-    Bob | 27
-  Alice | 23
-
-#### Inline Markdown within tables
-
-| Inline&nbsp;&nbsp;&nbsp;     | Markdown&nbsp;&nbsp;&nbsp;  | In&nbsp;&nbsp;&nbsp;                | Table      |
-| ---------- | --------- | ----------------- | ---------- |
-| *italics*  | **bold**  | ~~strikethrough~~&nbsp;&nbsp;&nbsp; | `code`     |
-
-## Code Blocks
-
-#### Code block with backticks
-
-```
-html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Example HTML5 Document</title>
-</head>
-<body>
-  <p>Test</p>
-</body>
-</html>
-```
-#### Code block indented with four spaces
-
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <title>Example HTML5 Document</title>
-    </head>
-    <body>
-      <p>Test</p>
-    </body>
-    </html>
-
-#### Code block with Hugo's internal highlight shortcode
-{{< highlight html >}}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Example HTML5 Document</title>
-</head>
-<body>
-  <p>Test</p>
-</body>
-</html>
-{{< /highlight >}}
-
-## List Types
-
-#### Ordered List
-
-1. First item
-2. Second item
-3. Third item
-
-#### Unordered List
-
-* List item
-* Another item
-* And another item
-
-#### Nested list
-
-* Item
-    - First Sub-item
-    - Second Sub-item
-
-## Other Elements — abbr, sub, sup, kbd, mark
-
-<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
-
-H<sub>2</sub>O
-
-X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
-
-Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.
-
-Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
+Cảm ơn bạn đã ghé thăm trang blog của mình.
+Hãy theo dõi để không bỏ lỡ những bài viết mới nhất của mình.
+Chúc bạn một ngày tốt lành!
