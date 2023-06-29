@@ -18,57 +18,65 @@
   }
 
   // Markdown format
-  & blockquote {
-    border-left: .25rem solid $gray-600;
-    margin-left: 1rem;
-    padding: .5rem;
-  }
-
-  & > main > pre {
-    background-color: $gray-200;
-    border-radius: .5rem;
-    padding: .5rem;
-  }
-
-  & table {
-    border: none !important;
-    margin-bottom: 1rem;
-    padding: 0 !important;
-    overflow-x: auto;
-    display: block;
-
-    &, th, td {
-      border: 1px solid $dark;
+  & > main {
+    & blockquote {
+      border-left: .25rem solid $gray-600;
+      margin-left: 1rem;
       padding: .5rem;
     }
 
-    & th {
-      background-color: $info;
-      color: $light;
-      text-align: center;
+    & h1, h2 {
+      border-bottom: 1px solid $gray-200;
+      margin-bottom: 1rem;
+      padding-bottom: .2rem;
     }
 
-    & tr {
-      &:hover {
-        background-color: $gray-200;
-      }
-    }
-  }
-
-  & .highlight {
-    margin-bottom: 1rem;
-
-    & > div {
+    & pre {
+      background-color: $gray-200;
       border-radius: .5rem;
-      overflow: auto;
+      padding: .5rem;
+    }
 
-      & > table {
-        overflow: visible;
+    & table {
+      border: none !important;
+      margin-bottom: 1rem;
+      padding: 0 !important;
+      overflow-x: auto;
+      display: block;
+
+      &, th, td {
+        border: 1px solid $dark;
+        padding: .5rem;
       }
 
-      & pre {
-        margin: 0;
-        padding: .5rem;
+      & th {
+        background-color: $info;
+        color: $light;
+        text-align: center;
+      }
+
+      & tr {
+        &:hover {
+          background-color: $gray-200;
+        }
+      }
+    }
+
+    & .highlight {
+      margin-bottom: 1rem;
+
+      & > div {
+        border-radius: .5rem;
+        overflow: auto;
+
+        & > table {
+          overflow: visible;
+        }
+
+        & pre {
+          margin: 0;
+          padding: .5rem;
+        }
       }
     }
   }
