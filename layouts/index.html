@@ -6,6 +6,10 @@
     <section class="col-lg-8 mb-4">
       <section>{{ partial "ads/728x90.html" . }}</section>
       <section>{{ partial "ads/468x60.html" . }}</section>
+      <header class="mb-3">
+        <h1 class="header__title">Bài viết mới</h1>
+        <hr class="hr-linear mb-2">
+      </header>
       <div class="container mb-4">
         <div class="row g-3 row-cols-1 row-cols-sm-2">
           {{ $paginator := .Paginate (where .Site.RegularPages `Type` `blogs`) }}
