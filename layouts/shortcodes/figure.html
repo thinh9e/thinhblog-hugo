@@ -1,4 +1,8 @@
-<figure class="text-center mb-2">
-  <img src="{{ .Get `src` }}" class="img-fluid rounded" alt="{{ .Get `cap` }}">
-  <figcaption class="mt-1"><em class="text-muted">{{ .Get `cap` }}</em></figcaption>
+{{ $cap := .Get `cap` }}
+{{ $capHide := .Get `capHide` }}
+<figure class="text-center mb-2" title="{{ $cap }}">
+  <img src="{{ .Get `src` }}" class="img-fluid rounded" alt="{{ $cap }}">
+  {{ if ne $capHide "true" }}
+    <figcaption class="mt-1"><em class="text-muted">{{ $cap }}</em></figcaption>
+  {{ end }}
 </figure>
