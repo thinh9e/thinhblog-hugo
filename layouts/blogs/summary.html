@@ -4,12 +4,12 @@
       <a class="badge text-bg-warning"
          href="categories/{{ .Page.Params.categories | urlize }}/">{{ .Page.Params.categories }}</a>
     </div>
-    <a href="{{ .Permalink }}">
+    <a href="{{ .Permalink }}" title="{{ .Title }}">
       <img src="{{ .Page.Params.thumbnail }}" class="card-img-top" alt="{{ .Title }}" loading="lazy">
     </a>
     <div class="card-body">
       <h2 class="card-title text-truncate">
-        <a class="card-link" href="{{ .Permalink }}">{{ .Title }}</a>
+        <a class="card-link" href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a>
       </h2>
       <div class="d-flex flex-column flex-sm-row">
         <div class="flex-grow-1 px-0">
