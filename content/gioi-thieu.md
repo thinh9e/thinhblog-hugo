@@ -10,7 +10,7 @@ Hi mọi người, mình là **Thịnh**,
 hiện tại mình đang là một lập trình viên.
 Mình đã lập gia đình, và vợ mình làm về kế toán.
 
-{{<figure src="img/avatar.png" cap="Avatar" capHide="true">}}
+{{<figure src="img/avatar.png" global="true" cap="Avatar" capHide="true">}}
 
 Mình thích khám phá và học hỏi những công nghệ mới.
 Mình đã học lập trình từ những năm học phổ thông,

@@ -1,16 +1,23 @@
 {{ $cap := .Get `cap` }}
 {{ $capHide := .Get `capHide` }}
+{{ $global := .Get `global` }}
 {{ $size := .Get `size` }}
 {{ $src := .Get `src` }}
-{{ with resources.Get $src }}
+
+{{ $image := .Page.Resources.GetMatch $src }}
+{{ if eq $global `true` }}
+  {{ $image = resources.Get $src }}
+{{ end }}
+
+{{ if $image }}
   <figure class="text-center mb-2" title="{{ $cap }}">
     {{ if not $size }}
-      {{ $size = printf "%dx%d" .Width .Height }}
+      {{ $size = printf `%dx%d` $image.Width $image.Height }}
     {{ end }}
-    {{ with .Resize (printf `%s %s` $size `webp`) }}
+    {{ with $image.Resize (printf `%s %s` $size `webp`) }}
       <img src="{{ .RelPermalink }}" class="img-fluid rounded" alt="{{ $cap }}" loading="lazy">
     {{ end }}
-    {{ if ne $capHide "true" }}
+    {{ if ne $capHide `true` }}
       <figcaption class="mt-1"><em class="text-muted">{{ $cap }}</em></figcaption>
     {{ end }}
   </figure>
