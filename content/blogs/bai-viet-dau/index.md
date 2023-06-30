@@ -3,7 +3,7 @@ title: "Bài viết đầu"
 author: "Thịnh Nguyễn"
 description: "Đây là bài viết đầu tiên trên trang blog của mình, đánh dấu thời điểm trang web được ra mắt"
 date: 2020-11-08T13:24:36+07:00
-thumbnail: "img/blogs/2023/06/bai-viet-dau-thumbnail.png"
+thumbnail: "img/thumbnail.png"
 categories: "Khác"
 tags: [ "bài viết đầu", "giới thiệu" ]
 draft: false
