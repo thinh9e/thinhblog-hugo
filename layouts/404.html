@@ -1,0 +1,9 @@
+{{ define `title` }}404 | {{ .Site.Title }}{{ end }}
+{{ define `description` }}404 - Trang không tìm thấy{{ end }}
+{{ define `main` }}
+<main role="main" class="container text-center mb-4">
+  <h1 class="display-1 fw-medium">404</h1>
+  <p>Trang không tìm thấy</p>
+  <em class="text-muted">Quay về <a class="link-info" href="{{ .Site.BaseURL }}">trang chủ</a></em>
+</main>
+{{ end }}
