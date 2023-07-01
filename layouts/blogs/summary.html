@@ -5,7 +5,11 @@
          href="categories/{{ .Page.Params.categories | urlize }}/">{{ .Page.Params.categories }}</a>
     </div>
     <a href="{{ .Permalink }}" title="{{ .Title }}">
-      <img src="{{ .Page.Params.thumbnail }}" class="card-img-top" alt="{{ .Title }}" loading="lazy">
+      {{ with .Resources.GetMatch .Page.Params.thumbnail }}
+        {{ with .Resize `525x300 webp` }}
+          <img src="{{ .RelPermalink }}" class="card-img-top" alt="{{ .Title }}" loading="lazy">
+        {{ end }}
+      {{ end }}
     </a>
     <div class="card-body">
       <h2 class="card-title text-truncate">

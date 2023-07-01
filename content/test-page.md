@@ -5,7 +5,7 @@ date: 2023-06-28T05:41:11+07:00
 draft: true
 ---
 
-{{<figure src="img/blogs/525x300.png" cap="Image caption">}}
+{{<figure src="img/blogs/525x300.png" global="true" cap="Image caption">}}
 
 ## Headings
 

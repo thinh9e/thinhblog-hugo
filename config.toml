@@ -5,6 +5,9 @@ paginate = 6
 removePathAccents = true
 enableRobotsTXT = true
 
+[imaging]
+quality = 80
+
 [menu]
 [[menu.main]]
 identifier = "home"
