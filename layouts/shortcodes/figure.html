@@ -1,7 +1,8 @@
 {{ $cap := .Get `cap` }}
 {{ $capHide := .Get `capHide` }}
 {{ $global := .Get `global` }}
-{{ $size := .Get `size` }}
+{{ $height := .Get `height` }}
+{{ $width := .Get `width` }}
 {{ $src := .Get `src` }}
 
 {{ $image := .Page.Resources.GetMatch $src }}
@@ -11,11 +12,17 @@
 
 {{ if $image }}
   <figure class="text-center mb-2" title="{{ $cap }}">
-    {{ if not $size }}
-      {{ $size = printf `%dx%d` $image.Width $image.Height }}
+    {{ if not $height }}
+      {{ $height = string $image.Height }}
     {{ end }}
+    {{ if not $width }}
+      {{ $width = string $image.Width }}
+    {{ end }}
+    {{ $size := printf `%sx%s` $width $height }}
     {{ with $image.Resize (printf `%s %s` $size `webp`) }}
-      <img src="{{ .RelPermalink }}" class="img-fluid rounded" alt="{{ $cap }}" loading="lazy">
+      <img src="{{ .RelPermalink }}" class="img-fluid rounded"
+           height="{{ $height }}" width="{{ $width }}"
+           alt="{{ $cap }}" loading="lazy">
     {{ end }}
     {{ if ne $capHide `true` }}
       <figcaption class="mt-1"><em class="text-muted">{{ $cap }}</em></figcaption>
