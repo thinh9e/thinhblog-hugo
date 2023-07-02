@@ -4,6 +4,7 @@ title = "Thịnh Blog"
 paginate = 6
 removePathAccents = true
 enableRobotsTXT = true
+disqusShortname = 'thinhblog'
 
 [imaging]
 quality = 80
