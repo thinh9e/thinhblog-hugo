@@ -45,7 +45,7 @@
             <a href="{{ .Site.Params.facebook }}" class="btn btn-light"><i class="fa-brands fa-facebook-f"></i></a>
             <a href="{{ .Site.Params.linkedin }}" class="btn btn-light"><i class="fa-brands fa-linkedin-in"></i></a>
           </div>
-          <button type="button" class="btn btn-info"><i class="fa-solid fa-magnifying-glass"></i></button>
+          {{ partial `searching.html` . }}
         </div>
       </div>
     </div>
