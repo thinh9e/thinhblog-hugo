@@ -12,10 +12,20 @@
       </header>
       <div class="container mb-4">
         <div class="list-group">
-          {{ range where ($.Site.GetPage `categories`).Pages.ByTitle `.Title` `!=` `Khác` }}
-            <a class="list-group-item list-group-item-action" href="{{ .Permalink }}">{{ .Title }}</a>
-          {{ end}}
-          <a class="list-group-item list-group-item-action" href="/categories/khac/">Khác</a>
+          {{ range where .Data.Terms.Alphabetical `.Term` `!=` `khac` }}
+            <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+               href="{{ .Page.Permalink }}">
+              {{ .Page.Title }}
+              <span class="badge bg-primary rounded-pill">{{ .Count }}</span>
+            </a>
+          {{ end }}
+          {{ with .Data.Terms.Get `khac` }}
+            <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+               href="{{ .Page.Permalink }}">
+              {{ .Page.Title }}
+              <span class="badge bg-primary rounded-pill">{{ .Count }}</span>
+            </a>
+          {{ end }}
         </div>
       </div>
       <section>{{ partial "ads/728x90.html" . }}</section>

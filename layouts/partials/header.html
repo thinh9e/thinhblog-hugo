@@ -20,13 +20,25 @@
                   {{ .Name }}
                 </a>
                 <ul class="dropdown-menu">
-                  {{ range where ($.Site.GetPage `categories`).Pages.ByTitle `.Title` `!=` `Khác` }}
-                    <li><a class="dropdown-item" href="{{ .Permalink }}">{{ .Title }}</a></li>
-                  {{ end }}
+                  {{ range where $.Site.Taxonomies.categories.Alphabetical `.Term` `!=` `khac` }}
                   <li>
-                    <hr class="dropdown-divider">
+                    <a class="dropdown-item d-flex justify-content-between align-items-center"
+                       href="{{ .Page.Permalink }}">
+                      {{ .Page.Title }}
+                      <span class="badge bg-primary rounded-pill">{{ .Count }}</span>
+                    </a>
                   </li>
-                  <li><a class="dropdown-item" href="/categories/khac/">Khác</a></li>
+                  {{ end }}
+                  {{ with $.Site.Taxonomies.categories.Get `khac` }}
+                    <li><hr class="dropdown-divider"></li>
+                    <li>
+                      <a class="dropdown-item d-flex justify-content-between align-items-center"
+                         href="{{ .Page.Permalink }}">
+                        {{ .Page.Title }}
+                        <span class="badge bg-primary rounded-pill">{{ .Count }}</span>
+                      </a>
+                    </li>
+                  {{ end }}
                 </ul>
               </li>
             {{ else }}
