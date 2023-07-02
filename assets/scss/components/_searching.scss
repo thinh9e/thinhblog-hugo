@@ -1,22 +1,30 @@
 .gsc-control-cse {
   border-radius: .5rem;
 
-  & .gsc-input-box {
-    border-radius: .5rem;
+  & td.gsc-input {
+    padding-right: 0 !important;
 
-    & .gsc-input {
-      color: $dark;
+    & div.gsc-input-box {
+      border-radius: .5rem;
+
+      & input.gsc-input {
+        color: $dark;
+      }
     }
   }
 
-  & button.gsc-search-button {
-    background-color: $info;
-    border: none;
-    border-radius: 50rem;
-    padding: .75rem;
+  & td.gsc-search-button {
 
-    &:hover {
-      background-color: lighten($info, 10%);
+    & button.gsc-search-button {
+      background-color: $info;
+      border: none;
+      border-radius: 50rem;
+      margin-left: 1rem;
+      padding: .75rem;
+
+      &:hover {
+        background-color: lighten($info, 10%);
+      }
     }
   }
 }
