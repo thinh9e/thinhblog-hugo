@@ -7,7 +7,7 @@ enableRobotsTXT = true
 disqusShortname = 'thinhblog'
 
 [imaging]
-quality = 80
+quality = 90
 
 [menu]
 [[menu.main]]
