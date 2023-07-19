@@ -1,8 +1,9 @@
 ---
 title: "Bà Đen - Ký ức ngày trên đồi mây"
 author: "Trang Phan"
-description: ""
-date: 2023-07-18T05:48:19+07:00
+description: "Nhật ký của mình và các bạn về chuyến đi leo núi Bà Đen nơi được xem là vùng núi cao nhất
+  khu vực phía Nam Việt Nam"
+date: 2023-07-20T05:50:19+07:00
 thumbnail: "img/thumbnail.png"
 categories: "Du lịch"
 tags: [ "núi bà đen", "du lịch", "leo núi", "tây ninh", "cắm trại" ]
