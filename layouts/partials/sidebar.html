@@ -1,6 +1,6 @@
 <aside class="sidebar">
   <section class="sidebar__widget">
-    <h5 class="sidebar__widget__title">Về mình</h5>
+    <h3 class="sidebar__widget__title">Về mình</h3>
     <hr class="hr-linear">
     <div class="sidebar__widget__body">{{ .Site.Params.shortIntro }}</div>
     <section class="sidebar__donate" title="Donate">
@@ -16,7 +16,7 @@
   </section>
   <section>{{ partial "ads/300x250.html" . }}</section>
   <section class="sidebar__widget">
-    <h5 class="sidebar__widget__title">Mới cập nhật</h5>
+    <h3 class="sidebar__widget__title">Mới cập nhật</h3>
     <hr class="hr-linear">
     <div class="sidebar__widget__body list-group list-group-flush">
       {{ with .Site.GetPage `Type` `blogs` }}
