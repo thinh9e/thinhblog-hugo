@@ -14,8 +14,10 @@
             <li class="nav-item">{{ .Date.Format `02.01.2006` }}</li>
             <li class="nav-item"><span class="text-info">{{ .Page.Params.author }}</span></li>
             <li class="nav-item">
+              {{ range .Page.Params.categories }}
               <a class="badge text-bg-warning"
-                 href="categories/{{ .Page.Params.categories | urlize }}/">{{ .Page.Params.categories }}</a>
+                 href="categories/{{ . | urlize }}/">{{ . }}</a>
+              {{ end }}
             </li>
           </ul>
           <hr class="hr-linear mt-2">

@@ -3,9 +3,9 @@ title: "Chứa Chan một ngày hè"
 author: "Trang Phan"
 description: "Nhật ký về chuyến đi leo núi Chứa Chan của mình và các bạn, để lại cho chúng mình những kỷ niệm khó phai
   thời sinh viên"
-date: 2023-07-23T09:42:55+07:00
+date: "2023-07-23T09:42:55+07:00"
 thumbnail: "img/thumbnail.png"
-categories: "Du lịch"
+categories: [ "Du lịch" ]
 tags: [ "núi chứa chan", "du lịch", "trải nghiệm", "hành trình", "khám phá" ]
 draft: false
 ---
