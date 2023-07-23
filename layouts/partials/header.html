@@ -52,10 +52,18 @@
         </ul>
         <div>
           <div class="btn-group me-1">
-            <a href="{{ .Site.Params.github }}" class="btn btn-light"><i class="fa-brands fa-github-alt"></i></a>
-            <a href="mailto:{{ .Site.Params.email }}" class="btn btn-light"><i class="fa-regular fa-envelope"></i></a>
-            <a href="{{ .Site.Params.facebook }}" class="btn btn-light"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="{{ .Site.Params.linkedin }}" class="btn btn-light"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="{{ .Site.Params.github }}" class="btn btn-light" title="Github">
+              <i class="fa-brands fa-github-alt"></i>
+            </a>
+            <a href="mailto:{{ .Site.Params.email }}" class="btn btn-light" title="Email">
+              <i class="fa-regular fa-envelope"></i>
+            </a>
+            <a href="{{ .Site.Params.facebook }}" class="btn btn-light" title="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="{{ .Site.Params.linkedin }}" class="btn btn-light" title="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
           </div>
           {{ partial `searching.html` . }}
         </div>

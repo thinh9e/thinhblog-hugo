@@ -7,7 +7,9 @@
     <a href="{{ .Permalink }}" title="{{ .Title }}">
       {{ with .Resources.GetMatch .Page.Params.thumbnail }}
         {{ with .Resize `525x300 webp` }}
-          <img src="{{ .RelPermalink }}" class="card-img-top" alt="{{ .Title }}" loading="lazy">
+          <img src="{{ .RelPermalink }}" class="card-img-top" alt="{{ .Title }}"
+               width="{{ .Width }}" height="{{ .Height }}"
+               loading="lazy">
         {{ end }}
       {{ end }}
     </a>
