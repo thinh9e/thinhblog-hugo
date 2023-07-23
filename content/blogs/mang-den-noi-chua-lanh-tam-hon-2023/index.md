@@ -3,9 +3,9 @@ title: "Măng Đen - Nơi chữa lành tâm hồn"
 author: "Trang Phan"
 description: "Những trải nghiệm của mình khi lần đầu đặt chân đến Măng Đen để nhận ra rằng đây là nơi bình yên,
   liều thuốc chữa lành tâm hồn đáng để nếm trải"
-date: 2023-07-01T21:00:00+07:00
+date: "2023-07-01T21:00:00+07:00"
 thumbnail: "img/thumbnail.png"
-categories: "Du lịch"
+categories: [ "Du lịch" ]
 tags: [ "du lịch măng đen", "rừng thông", "săn mây", "ruộng bậc thang", "thác pa sỹ", "review" ]
 draft: false
 ---

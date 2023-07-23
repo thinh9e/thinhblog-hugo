@@ -1,8 +1,10 @@
 <article class="col">
   <section class="card shadow-sm">
-    <div class="card-header d-flex align-items-center">
+    <div class="card-header">
+      {{ range .Page.Params.categories }}
       <a class="badge text-bg-warning"
-         href="categories/{{ .Page.Params.categories | urlize }}/">{{ .Page.Params.categories }}</a>
+         href="categories/{{ . | urlize }}/">{{ . }}</a>
+      {{ end }}
     </div>
     <a href="{{ .Permalink }}" title="{{ .Title }}">
       {{ with .Resources.GetMatch .Page.Params.thumbnail }}

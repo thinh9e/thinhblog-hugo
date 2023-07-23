@@ -2,7 +2,7 @@
 title: "Giới thiệu"
 description: "Trang giới thiệu về blog của mình,
   nơi mình chia sẻ những những chủ đề liên quan đến lập trình và khám phá"
-date: 2023-06-28T06:30:00+07:00
+date: "2023-06-28T06:30:00+07:00"
 draft: false
 ---
 

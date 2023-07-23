@@ -3,9 +3,9 @@ title: "Review Măng Đen 3N2Đ cực chi tiết"
 author: "Trang Phan"
 description: "Bài viết chia sẻ về hành trình 3 ngày 2 đêm của mình tại Măng Đen, về cách di chuyển, địa điểm ăn uống,
   checkin,... giúp các bạn có thêm lựa chọn khi đến đây"
-date: 2023-07-04T05:11:16+07:00
+date: "2023-07-04T05:11:16+07:00"
 thumbnail: "img/thumbnail.png"
-categories: "Du lịch"
+categories: [ "Du lịch" ]
 tags: [ "review", "măng đen", "du lịch", "lịch trình", "ăn chơi" ]
 draft: false
 ---
