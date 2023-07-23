@@ -20,7 +20,7 @@
     <hr class="hr-linear">
     <div class="sidebar__widget__body list-group list-group-flush">
       {{ with .Site.GetPage `Type` `blogs` }}
-        {{ range first 3 .Pages.ByDate.Reverse }}
+        {{ range first 5 .Pages.ByDate.Reverse }}
           {{ .Render `li` }}
         {{ end }}
       {{ end }}
