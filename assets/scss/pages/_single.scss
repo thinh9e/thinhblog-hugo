@@ -7,6 +7,10 @@
         text-decoration: none;
       }
     }
+
+    &__author {
+      color: $blue-600;
+    }
   }
 
   &__tags {
@@ -50,8 +54,8 @@
       }
 
       & th {
-        background-color: $info;
-        color: $light;
+        background-color: $primary;
+        color: $white;
         text-align: center;
       }
 

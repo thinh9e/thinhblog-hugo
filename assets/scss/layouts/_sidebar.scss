@@ -9,10 +9,11 @@
     box-shadow: $box-shadow-sm;
     margin-bottom: 1.5rem;
     padding: 1.5rem;
+    overflow: hidden;
 
     &__title {
       font-size: 1.25rem;
-      color: $info;
+      color: $primary;
     }
 
     &__body {
@@ -21,7 +22,7 @@
 
       & a.list-group-item {
         &:hover {
-          color: $info;
+          color: $primary;
         }
       }
     }

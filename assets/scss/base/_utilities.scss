@@ -1,12 +1,12 @@
 .hr-linear {
-  background-image: linear-gradient(to right, $info, transparent);
+  background-image: linear-gradient(to right, $primary, transparent);
   border: none;
   border-radius: 50rem;
   height: 2px;
 }
 
 .hr-radial {
-  background-image: radial-gradient($info, transparent);
+  background-image: radial-gradient($primary, transparent);
   border: none;
   border-radius: 50rem;
   height: 2px;

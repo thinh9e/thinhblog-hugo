@@ -1,10 +1,14 @@
 .footer {
   & figure {
     text-align: center;
+
+    & figcaption {
+      color: $gray-700;
+    }
   }
 
   & a {
-    color: $info;
+    color: $blue-600;
     text-decoration: none;
   }
 }
