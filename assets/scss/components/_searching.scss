@@ -16,14 +16,14 @@
   & td.gsc-search-button {
 
     & button.gsc-search-button {
-      background-color: $info;
+      background-color: $primary;
       border: none;
       border-radius: 50rem;
       margin-left: 1rem;
       padding: .75rem;
 
       &:hover {
-        background-color: lighten($info, 10%);
+        background-color: darken($primary, 10);
       }
     }
   }

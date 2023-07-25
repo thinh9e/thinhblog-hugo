@@ -33,7 +33,7 @@ category = "categories"
 description = """Trang blog cá nhân chia sẻ về kiến thức lập trình, kinh nghiệm làm việc ở công ty, \
 những trải nghiệm du lịch khám phá và nhiều thức khác"""
 author = "Thịnh Nguyễn"
-shortIntro = "Hi, mình thích lập trình và khám phá."
+shortIntro = "Hi, mình thích lập trình và khám phá"
 github = "https://github.com/thinh9e"
 email = "npthinh1996@gmail.com"
 facebook = "https://www.facebook.com/thinh9e"

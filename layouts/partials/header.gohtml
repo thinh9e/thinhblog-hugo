@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
     <div class="container">
       <a class="navbar-brand" href="{{ .Site.BaseURL }}">
-        <img src="/logo.png" alt="logo" width="30" height="30" class="d-inline-block align-top">
+        <img src="/logo.webp" alt="logo" width="30" height="30" class="d-inline-block align-top">
         <strong>{{ .Site.Title }}</strong>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse"
@@ -53,16 +53,16 @@
         <div>
           <div class="btn-group me-1">
             <a href="{{ .Site.Params.github }}" class="btn btn-light" title="Github">
-              <i class="fa-brands fa-github-alt"></i>
+              <i class="bi bi-github"></i>
             </a>
             <a href="mailto:{{ .Site.Params.email }}" class="btn btn-light" title="Email">
-              <i class="fa-regular fa-envelope"></i>
+              <i class="bi bi-envelope-fill"></i>
             </a>
             <a href="{{ .Site.Params.facebook }}" class="btn btn-light" title="Facebook">
-              <i class="fa-brands fa-facebook-f"></i>
+              <i class="bi bi-facebook"></i>
             </a>
             <a href="{{ .Site.Params.linkedin }}" class="btn btn-light" title="LinkedIn">
-              <i class="fa-brands fa-linkedin-in"></i>
+              <i class="bi bi-linkedin"></i>
             </a>
           </div>
           {{ partial `searching.gohtml` . }}
