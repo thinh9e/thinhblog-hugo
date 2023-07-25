@@ -12,7 +12,7 @@
           <hr class="hr-linear mb-2">
           <ul class="single__header__nav nav grid gap-0 column-gap-5">
             <li class="nav-item">{{ .Date.Format `02.01.2006` }}</li>
-            <li class="nav-item"><span class="text-info">{{ .Page.Params.author }}</span></li>
+            <li class="nav-item"><span class="single__header__author">{{ .Page.Params.author }}</span></li>
             <li class="nav-item">
               {{ range .Page.Params.categories }}
               <a class="badge text-bg-warning"
