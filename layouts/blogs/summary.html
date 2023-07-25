@@ -1,5 +1,5 @@
 <article class="col">
-  <section class="card shadow-sm">
+  <section class="card shadow-sm h-100">
     <div class="card-header">
       {{ range .Page.Params.categories }}
       <a class="badge text-bg-warning"
@@ -16,19 +16,13 @@
       {{ end }}
     </a>
     <div class="card-body">
-      <h2 class="card-title text-truncate">
-        <a class="card-link" href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a>
-      </h2>
-      <div class="d-flex flex-column flex-sm-row">
-        <div class="flex-grow-1 px-0">
-          <hr class="hr-linear mb-0">
-        </div>
-        <div class="pr-0">
-          <p class="card-text text-right">
-            <small class="text-muted">Cập nhật: {{ .Date.Format `02.01.2006` }}</small>
-          </p>
-        </div>
-      </div>
+      <h2 class="card-title"><a class="card-link" href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h2>
+      <small class="text-muted">{{ .Description }}</small>
+    </div>
+    <hr class="hr-linear m-0">
+    <div class="card-footer bg-white border-0 d-flex justify-content-between">
+      <small class="text-muted">{{ .Date.Format `02.01.2006` }}</small>
+      <small class="text-primary">{{ .Page.Params.author }}</small>
     </div>
   </section>
 </article>

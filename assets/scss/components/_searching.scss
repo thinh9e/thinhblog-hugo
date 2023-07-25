@@ -23,7 +23,7 @@
       padding: .75rem;
 
       &:hover {
-        background-color: lighten($primary, 10%);
+        background-color: darken($primary, 10);
       }
     }
   }

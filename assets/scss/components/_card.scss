@@ -31,13 +31,13 @@
   }
 
   &-title {
-    font-size: 1.15rem;
+    font-size: 1.25rem;
 
     & > a {
-      color: $dark;
+      color: $primary;
 
       &:hover {
-        color: $primary;
+        color: darken($primary, 10);
       }
     }
   }
