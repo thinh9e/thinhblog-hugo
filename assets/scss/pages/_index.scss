@@ -1,0 +1,18 @@
+.header-hero {
+  background-image: url("/hero.webp");
+  background-color: $gray-200;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+
+  & > div {
+    backdrop-filter: blur(.25rem);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header-hero {
+    background-image: url('/hero-min.webp');
+  }
+}
