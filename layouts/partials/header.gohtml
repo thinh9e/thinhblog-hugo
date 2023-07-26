@@ -2,12 +2,16 @@
   <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
     <div class="container">
       <a class="navbar-brand" href="{{ .Site.BaseURL }}">
-        <img src="/logo.webp" alt="logo" width="30" height="30" class="d-inline-block align-top">
+        {{ with resources.Get `img/logo.png` }}
+          {{ with .Resize `45x45 webp` }}
+            <img src="{{ .RelPermalink }}" alt="logo" width="30" height="30" class="d-inline-block align-top">
+          {{ end }}
+        {{ end }}
         <strong>{{ .Site.Title }}</strong>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse"
               aria-controls="navbar-collapse" aria-expanded="false" aria-label="toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <i class="bi bi-list"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbar-collapse">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
