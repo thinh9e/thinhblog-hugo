@@ -8,10 +8,18 @@
     <section class="sidebar__donate">
       <div>
         <a href="{{ .Site.Params.momo }}" target="_blank" title="MoMo">
-          <img src="/img/momo.png" width="48" height="48" alt="momo">
+          {{ with resources.Get `img/momo.png` }}
+            {{ with .Resize `48x48 webp` }}
+              <img src="{{ .RelPermalink }}" width="48" height="48" alt="momo">
+            {{ end }}
+          {{ end }}
         </a>
         <a href="{{ .Site.Params.paypal }}" target="_blank" title="PayPal">
-          <img src="/img/paypal.png" width="48" height="48" alt="paypal">
+          {{ with resources.Get `img/paypal.png` }}
+            {{ with .Resize `48x48 webp` }}
+              <img src="{{ .RelPermalink }}" width="48" height="48" alt="paypal">
+            {{ end }}
+          {{ end }}
         </a>
       </div>
     </section>
