@@ -3,7 +3,7 @@ title: "Cài đặt Python phục vụ cho công việc"
 author: "Thịnh Nguyễn"
 description: "Hướng dẫn cách cài đặt Python theo kinh nghiệm của mình, giúp các bạn có thể học và làm việc 
   dễ dàng với Python"
-date: "2023-07-26T21:58:52+07:00"
+date: "2023-07-31T21:58:52+07:00"
 thumbnail: "img/thumbnail.png"
 categories: [ "Lập trình" ]
 tags: [ "lập trình python", "cài đặt python", "python cho công việc" ]
