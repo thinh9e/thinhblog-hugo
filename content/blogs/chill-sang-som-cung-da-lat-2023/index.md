@@ -2,7 +2,7 @@
 title: "Chill sáng sớm cùng Đà Lạt"
 author: "Trang Phan"
 description: "Thay vì nằm cuộn chăn dưới cái tiết trời mười độ cê, tại sao không thử nghiêng mình ra ban công ngắm xem
-  sương sớm Đà Lạt có gì nè."
+  sương sớm Đà Lạt có gì nè"
 date: "2023-08-05T11:50:29+07:00"
 thumbnail: "img/thumbnail.png"
 categories: [ "Du lịch" ]
