@@ -40,7 +40,3 @@ facebook = "https://www.facebook.com/thinh9e"
 linkedin = "https://www.linkedin.com/in/thinh9e/"
 momo = "https://me.momo.vn/thinh9e"
 paypal = "https://paypal.me/npthinh1996"
-
-[markup]
-[markup.highlight]
-lineNos = true
