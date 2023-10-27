@@ -40,7 +40,7 @@ hệ điều hành Windows, Linux hoặc macOS.
 Sau khi cài xong, các bạn sử dụng lệnh sau để cập nhật thư viện:
 
 ```cmd
- conda update --all
+conda update --all
 ```
 
 Python sẽ được cài đặt kèm theo với phiên bản tương ứng như trên website Miniconda mà bạn tải về. Bạn có thể dễ dàng
