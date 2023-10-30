@@ -8,6 +8,7 @@
 
   & > div {
     backdrop-filter: blur(.25rem);
+    -webkit-backdrop-filter: blur(.25rem); // Safari
   }
 }
 
