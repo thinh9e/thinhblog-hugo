@@ -6,7 +6,7 @@
   <title>{{ block `title` . }}{{ end }}</title>
   <meta name="description" content="{{ block `description` . }}{{ end }}">
   <base href="{{ .Site.BaseURL }}">
-  <meta name="author" content="{{ .Site.Params.author }}">
+  <meta name="author" content="{{ .Site.Params.author.name }}">
   {{ partial `style.gohtml` . }}
   {{ block `style` . }}{{ end }}
   {{ if not .Site.IsServer }}
