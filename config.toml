@@ -35,12 +35,11 @@ category = "categories"
 [params]
 description = """Trang blog cá nhân chia sẻ về kiến thức lập trình, kinh nghiệm làm việc ở công ty, \
 những trải nghiệm du lịch khám phá và nhiều thức khác"""
+author = "Thịnh Nguyễn"
 shortIntro = "Hi, mình thích lập trình và khám phá"
 github = "https://github.com/thinh9e"
+email = "npthinh1996@gmail.com"
 facebook = "https://www.facebook.com/thinh9e"
 linkedin = "https://www.linkedin.com/in/thinh9e/"
 momo = "https://me.momo.vn/thinh9e"
 paypal = "https://paypal.me/npthinh1996"
-[params.author]
-email = 'npthinh1996@gmail.com'
-name = 'Thịnh Nguyễn'
