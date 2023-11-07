@@ -16,7 +16,7 @@ draft: false
 
 - Địa chỉ: Hẻm 120/25 Trần Bình Trọng, Phường 2, Quận 5, TP. HCM
 - Giờ mở cửa: 09h00 - 22h00
-- Giá tham khảo: 30.000-60.000 đồng
+- Giá tham khảo: 30.000 - 60.000 đồng
 
 ## Không gian quán
 
