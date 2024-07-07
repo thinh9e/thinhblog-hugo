@@ -9,7 +9,7 @@
   <meta name="author" content="{{ .Site.Params.author }}">
   {{ partial `style.gohtml` . }}
   {{ block `style` . }}{{ end }}
-  {{ if not .Site.IsServer }}
+  {{ if not hugo.IsServer }}
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-WJ469DT3QF"></script>
     <script>
