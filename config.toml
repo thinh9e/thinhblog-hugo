@@ -1,7 +1,6 @@
 baseURL = "https://thinhblog.com/"
 languageCode = "vi"
 title = "Thịnh Blog"
-paginate = 6
 removePathAccents = true
 enableRobotsTXT = true
 
@@ -28,6 +27,11 @@ identifier = "cat"
 name = "Chủ đề"
 url = ""
 weight = 3
+
+[pagination]
+disableAliases = false
+pagerSize = 6
+path = "page"
 
 [taxonomies]
 category = "categories"
