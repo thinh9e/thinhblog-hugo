@@ -1,0 +1,40 @@
+<aside class="sidebar">
+    <section class="sidebar__widget">
+        <h2 class="sidebar__widget__title">Donate cho mình</h2>
+        <hr class="hr-linear">
+        <div class="sidebar__widget__body">
+            <span>Mọi khoản ủng hộ đều được mình trân trọng và sử dụng để duy trì và phát triển trang blog!</span>
+        </div>
+        <section class="sidebar__donate">
+            <div>
+                <a href="{{ .Site.Params.momo }}" target="_blank" title="MoMo">
+                    {{ with resources.Get `img/momo.png` }}
+                        {{ with .Resize `48x48 webp` }}
+                            <img src="{{ .RelPermalink }}" width="48" height="48" alt="momo">
+                        {{ end }}
+                    {{ end }}
+                </a>
+                <a href="{{ .Site.Params.paypal }}" target="_blank" title="PayPal">
+                    {{ with resources.Get `img/paypal.png` }}
+                        {{ with .Resize `48x48 webp` }}
+                            <img src="{{ .RelPermalink }}" width="48" height="48" alt="paypal">
+                        {{ end }}
+                    {{ end }}
+                </a>
+            </div>
+        </section>
+    </section>
+    <section>{{ partial "ads/300x250.gohtml" . }}</section>
+    <section class="sidebar__widget">
+        <h2 class="sidebar__widget__title">Mới cập nhật</h2>
+        <hr class="hr-linear">
+        <div class="sidebar__widget__body list-group list-group-flush">
+            {{ with .Site.GetPage `Type` `blogs` }}
+                {{ range first 5 .Pages.ByDate.Reverse }}
+                    {{ .Render `li` }}
+                {{ end }}
+            {{ end }}
+        </div>
+    </section>
+    <section class="sticky-top">{{ partial "ads/300x600.gohtml" . }}</section>
+</aside>
